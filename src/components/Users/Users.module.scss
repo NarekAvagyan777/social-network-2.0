@@ -1,0 +1,23 @@
+.usersPageWrapper {
+    padding:  0 0 0 10px;
+}
+
+.pageNumber:not(:last-child) {
+    margin-right: 10px;
+}
+
+.currentPage {
+    font-weight: 900;
+}
+
+.pagesNumberWrapper {
+    margin: 10px 0;
+}
+
+.singleUser {
+    margin: 0 0 10px 0;
+
+    button {
+        margin: 0 0 0 10px;
+    }
+}

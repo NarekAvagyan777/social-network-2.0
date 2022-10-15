@@ -1,0 +1,19 @@
+.navbar {
+    grid-area: n;
+    background: green;
+  }
+  
+  nav {
+    padding: 30px 0px 0px 15px;
+  }
+    
+  .navItem:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  
+  .navItem {
+      a {
+          color: white;
+          text-decoration: none;
+      }
+  }

@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import Header from "./Header";
-import { authMeCreator } from "../../redux/reducers/authReducer";
+import { authMeCreator, logoutCreator } from "../../redux/reducers/authReducer";
 
 const HeaderContainer = (props) => {
     useEffect(() => {
         props.authMeCreator()
     }, [])
-    return <Header me={props.me} />
+    return <Header me={props.me} logoutCreator={props.logoutCreator}/>
 }
 
 let mapStateToProps = (state) => {
@@ -17,5 +17,5 @@ let mapStateToProps = (state) => {
 }
 
 export default connect(mapStateToProps, {
-    authMeCreator
+    authMeCreator, logoutCreator
 })(HeaderContainer);
